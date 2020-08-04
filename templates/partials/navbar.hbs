@@ -1,0 +1,250 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/java/navbutton.js"></script>
+<!-- Comienza Navbar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img id='logotipo_navbar' src='/img/logo.jpg'></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <!-- Definimos el boton DropDown-->
+            <li class="nav-item dropdown d-none d-md-block d-lg-block" id="btnProductos">
+                <a class="nav-link dropdown-toggle dropdown btn-one" href="#" id="navbarDropdownMenuLinkProductos" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Productos
+                </a>
+                <!-- Este es el DropDown-->
+                <div class="dropdown-menu" id='dropdown-menu-productos'
+                    aria-labelledby="navbarDropdownMenuLinkProductos">
+                    <div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4" id="seccion1">
+                                <br>
+                                <div class="container">
+                                    <div class="col-xl-1 col-lg-0 col-md-0 col-sm-0">
+
+                                    </div>
+                                    <div class="col-xl-11 col-lg-12 col-md-12 col-sm-12">
+                                        <h5 class="font-weight-bold nav-item-lg-title" id="title_seccion1">Explora</h5>
+                                        <p>
+                                        </p>
+                                        <ul class="row list-unstyled" id="lista_productos">
+                                            <div class="container">
+                                                <li class="nav-item nav-item-lg"><button id='btnProdSeguridad' class="btn">Seguridad de la
+                                                        Información </button>
+                                                </li>
+
+                                                <li class="nav-item nav-item-lg"><button id='btnProdCableado' class="btn">Cableado
+                                                        Estructurado</button>
+                                                </li>
+                                                <li class="nav-item nav-item-lg"><button id='btnProdMantenimiento' class="btn">Mantenimiento
+                                                        de Equipos</button>
+                                                </li>
+                                                <li class="nav-item nav-item-lg"><button id='btnProdDesarrollo' class="btn">Desarollo de
+                                                        Sistemas</button>
+                                                </li>
+                                                <li class="nav-item nav-item-lg"><button id='btnProdFormacion' class="btn">Formación</button>
+                                                </li>
+
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Seccion que se Cambia con Respecto al boton precionado-->
+                            <div class="col-lg-8 col-md-8 d-none d-md-block d-lg-block" id="seccion2">
+                                <br>
+                                <div class="container">
+                                    <h1 id="change_title">Productos</h1>
+                                </div>
+                                <div class="row">
+                                    <br>
+                                    <div class="col-lg-6 col-md-6">
+                                        <br>
+                                        <p class='description' id="change_description">
+                                            Somos una empresa de tecnología que proporciona soluciones que cubren las
+                                            más altas exigencias de los clientes.
+                                        </p>
+                                        <p class="description" id="change_description_productos">
+                                            <br>
+                                        </p>
+                                        <p class='description' id='change_description_productos2'>
+
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <br>
+                                        <img class="imagenes" id="change_image_productos" src="/img/productos.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- Definimos el boton DropDown-->
+            <li class="nav-item dropdown d-none d-md-block d-lg-block" id="btnServicios">
+                <a class="nav-link dropdown-toggle dropdown btn-one" href="#" id="navbarDropdownMenuLink" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Servicios
+                </a>
+                <!-- Este es el DropDown-->
+                <div class="dropdown-menu " id='dropdown-menu-servicios' aria-labelledby="navbarDropdownMenuLink">
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" id="serviciosseccion1">
+                            <br>
+                            <div class="container">
+                                <div class="col-xl-1 col-lg-0 col-md-0">
+
+                                </div>
+                                <div class="col-xl-11 col-lg-12 col-md-12">
+                                    <h5 class="font-weight-bold nav-item-lg-title" id="title_seccion1">Explora</h5>
+                                    <p>
+                                    </p>
+                                    <ul class="row list-unstyled" id="lista_productos">
+                                        <div class="container">
+                                            <li class="nav-item nav-item-lg"><button id='btnServSeguridad' class="btn">Seguridad de la
+                                                    Información</button>
+                                            </li>
+                                            <li class="nav-item nav-item-lg"><button id='btnServCableado' class="btn">Cableado
+                                                    Estructurado</button>
+                                            </li>
+                                            <li class="nav-item nav-item-lg"><button id='btnServMantenimiento' class="btn">Mantenimiento
+                                                    de Equipos</button>
+                                            </li>
+                                            <li class="nav-item nav-item-lg"><button id='btnServSoporte' class="btn">Soporte
+                                                    Tecnológico</button>
+                                            </li>
+                                            <li class="nav-item nav-item-lg"><button id='btnServDesarrollo'class="btn">Desarrollo de
+
+                                                    Sistemas</button>
+                                            </li>
+                                            <li class="nav-item nav-item-lg"><button id='btnServFormacion' class="btn">Formación</button>
+                                            </li>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Seccion que se Cambia con Respecto al boton precionado-->
+                        <div class="col-lg-8 col-md-8 d-none d-md-block d-lg-block" id="seccion2">
+                            <br>
+                            <div class="container">
+                                <h1 id="change_title_servicios">Servicios</h1>
+                            </div>
+                            <div class="row">
+                                <br>
+                                <div class="col-lg-6 col-md-6">
+                                    <br>
+                                    <p class='description' id="change_description_servicios">
+                                        La Innovación Tecnologíca es el medio más importante que ofrecemos para
+                                        fortalecer la experiencia del cliente.
+                                    </p>
+                                    <p>
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <br>
+                                    <img class="imagenes" id="change_image_servicios" src="/img/servicios.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- Definimos el boton DropDown-->
+            <li class="nav-item dropdown d-none d-md-block d-lg-block" id="btnCursos">
+                <a class="nav-link dropdown-toggle dropdown btn-one" href="#" id="navbarDropdownMenuLinkCursos" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Cursos
+                </a>
+                <!-- Este es el DropDown-->
+                <div class="dropdown-menu " id='dropdown-menu-cursos' aria-labelledby="navbarDropdownMenuLinkCursos">
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" id="serviciosseccion1">
+                            <br>
+                            <div class="container">
+                                <div class="col-xl-1 col-lg-0 col-md-0">
+
+                                </div>
+                                <div class="col-xl-11 col-lg-12 col-md-12">
+                                    <h5 class="font-weight-bold nav-item-lg-title" id="title_seccion1">Explora</h5>
+                                    <p>
+                                    </p>
+                                    <ul class="row list-unstyled" id="lista_productos">
+                                        <div class="container">
+                                            <li class="nav-item nav-item-lg"><button id='btnCurLinux' class="btn">Linux</button>
+                                            </li>
+                                            <li class="nav-item nav-item-lg"><button id='btnCurRedes' class="btn">Redes</button>
+                                            </li>
+                                            <li class="nav-item nav-item-lg"><button id='btnCurVirtualizacion'class="btn">Virtualizacion</button>
+                                            </li>
+                                            <li class="nav-item nav-item-lg"><button id='btnCurSecurity' class="btn">IT Security</button>
+                                            </li>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Seccion que se Cambia con Respecto al boton precionado-->
+                        <div class="col-lg-8 col-md-8 d-none d-md-block d-lg-block" id="seccion2cursos">
+                            <br>
+                            <div class="container">
+                                <h1 class = 'title' id="change_title_cursos">Cursos</h1>
+                            </div>
+                            <div class="row">
+                                <br>
+                                <div class="col-lg-6 col-md-6">
+                                    <br>
+                                    <p class='description' id="change_description_cursos">
+                                        La Innovación Tecnologíca es el medio más importante que ofrecemos para
+                                        fortalecer la experiencia del cliente.
+                                    </p>
+                                    <p id='list1' class='cursos'>
+                                        
+                                    </p>
+                                    <p id='list2' class='cursos'>
+                                        
+                                    </p>
+                                    <p id='list3' class='cursos'>
+                                        
+                                    </p>
+                                    <p id='list4' class='cursos'>
+                                        
+                                    </p>
+                                    <p id='list5' class='cursos'>
+                                        
+                                    </p>
+                                    <p id='list6' class='cursos'>
+                                        
+                                    </p>
+                                    <p id='list7' class='cursos'>
+                                        
+                                    </p>
+                                
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <br>
+                                    <img class="imagenes" id="change_image_cursos" src="/img/cursos.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Soporte</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+            </li>
+        </ul>
+    </div>
+</nav>
