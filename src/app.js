@@ -6,6 +6,7 @@ const youtubeURL = 'AIzaSyArAtUDVHCAoNonbuFnaxXA6A6ONY9VYEk';
 
 // Create a Express objet
 const app = express()
+const port = process.env.PORT || 3000
 
 //Define paths for Express config
 const publicDirectoryPath = path.join(__dirname, '../public')
@@ -43,7 +44,7 @@ app.get('*', (req, res) => {
 })
 
 //Express server lisener
-app.listen(3000, () => {
-  console.log('Server is up on port 3000.')
+app.listen(port, () => {
+  console.log('Server is up on port ${port}.')
   console.log(viewsPath)
 })
